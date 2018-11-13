@@ -13,7 +13,7 @@
 
 - name: Generate route ID
   set_fact:
-    route_id: "{{ route.service_name | to_uuid }}"
+    route_id: "{{ 9999999999999999999999 | random | to_uuid }}"
 
 - name: Create route
   uri:
